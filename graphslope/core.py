@@ -145,11 +145,18 @@ class GraphSlope:
 
     References
     ----------
-    A sharp oracle inequality for Graph-Slope
+    A sharp oracle inequality for Graph-Slope,
     Pierre Bellec, Joseph Salmon and Samuel Vaiter
     2017.
 
-    XXX: cite figuerdo + candes
+    The ordered weighted L1 norm: Atomic formulation, dual norm,
+    and projections.
+    X. Zeng, M. Figueiredo.
+    2014.
+
+    SLOPE - Adaptive Variable Selection via Convex Optimization.
+    Malgorzata Bogdan, Ewout van den Berg, Weijie Su, Emmanuel Candes.
+    2014.
     """
 
     def __init__(self, incidence, lambdas=1.0, incidence_norm=None, warm_start=False, max_iter=1000, tol=0.0001):
