@@ -5,6 +5,8 @@ graphslope is a Python module dedicated to solve the Graph-Slope
 optimization problem as introduced in [1]. It is ditributed under
 the 3-Clause BSD license.
 
+WARNING: This is a python2 project and is deprecated as python2 itself.
+
 Important links
 ===================
 
@@ -23,9 +25,9 @@ Install
 =========
 
 This package uses distutils, which is the default way of installing
-python modules. To install in your home directory, use::
+python modules. To install it locally, use::
 
-  python setup.py install --home
+  pip install -e .
 
 To install for all users on Unix/Linux::
 
