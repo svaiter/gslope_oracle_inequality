@@ -1,5 +1,3 @@
-from __future__ import division, print_function
-
 import numpy as np
 import scipy.linalg as lin
 from scipy.sparse.linalg import svds
