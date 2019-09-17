@@ -183,9 +183,9 @@ class GraphSlope:
             warmed_up = None
 
         # Beware, multiply lambdas by n to go from 1/2n ||.||^2 to 1/2 ||.||^2
-        res = gslope_predict(self.incidence, self.y_, y.shape[0] * self.lambdas,
-                             operator_norm=self.incidence_norm, warm_start=warmed_up,
-                             tol=self.tol, maxiter=self.max_iter, retall=True)
+        res = graphslope_fista(self.incidence, self.y_, y.shape[0] * self.lambdas,
+                               operator_norm=self.incidence_norm, warm_start=warmed_up,
+                               tol=self.tol, maxiter=self.max_iter, retall=True)
 
         self.coef_ = res['beta']
         self.dual_coef_ = res['theta']
